@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Tuition Centre</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&amp;family=Caveat:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+    .caveat { font-family: 'Caveat', cursive; }
+    .float-anim { animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .pulse-glow { animation: glow 2s ease-in-out infinite; }
+    @keyframes glow { 0%,100%{box-shadow:0 0 20px rgba(255,255,255,0.3)} 50%{box-shadow:0 0 40px rgba(255,255,255,0.6)} }
+    .slide-in { animation: slideIn 0.8s ease-out forwards; opacity:0; transform:translateY(30px); }
+    @keyframes slideIn { to{opacity:1;transform:translateY(0)} }
+    .triangle-svg { filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background:#1a0533;"><!-- Click to change BG hint -->
+   <div class="fixed top-4 right-4 z-50 bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-2 rounded-full cursor-pointer" onclick="changeBg()"><i data-lucide="palette" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i> Click to change background
+   </div><!-- Hero Section -->
+   <header class="text-center pt-16 pb-10 px-4 relative">
+    <div class="slide-in" style="animation-delay:0.1s">
+     <p class="text-yellow-300 tracking-widest text-sm font-semibold mb-2">TUTION CENTRE</p>
+     <h1 id="main-title" class="text-white text-4xl md:text-6xl font-900 leading-tight">Maths</h1>
+     <p id="tagline" class="text-white/80 text-lg mt-3 caveat text-2xl">Learn Today, Lead Tomorrow</p>
+    </div>
+    <div class="flex justify-center gap-4 mt-8 slide-in" style="animation-delay:0.3s"><span class="bg-green-500 text-white px-5 py-2 rounded-full font-bold text-sm">ONLINE</span> <span class="bg-orange-500 text-white px-5 py-2 rounded-full font-bold text-sm">OFFLINE</span>
+    </div>
+   </header><!-- Main Pitch -->
+   <section class="text-center px-6 py-10 slide-in" style="animation-delay:0.5s">
+    <h2 class="text-yellow-300 text-2xl md:text-3xl font-800">MATHS TUITION</h2>
+    <p class="text-white/70 mt-3 max-w-md mx-auto">Learn Maths the Smart Way — From the Comfort of Your Home</p>
+    <div class="mt-6 inline-block bg-white/10 border border-white/20 rounded-xl px-8 py-4">
+     <p class="text-white font-bold text-lg">COACHING FOR</p>
+     <p class="text-yellow-300 text-3xl font-900 mt-1">Std. IX &amp; X</p>
+    </div>
+   </section><!-- Features Grid -->
+   <section class="px-6 py-8 max-w-3xl mx-auto slide-in" style="animation-delay:0.7s">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+     <div class="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/10"><i data-lucide="award" class="text-yellow-300 mb-2" style="width:28px;height:28px;"></i>
+      <p class="text-white font-bold text-sm">EXPERIENCED TEACHERS</p>
+     </div>
+     <div class="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/10"><i data-lucide="file-text" class="text-yellow-300 mb-2" style="width:28px;height:28px;"></i>
+      <p class="text-white font-bold text-sm">CHAPTERWISE TESTS &amp; NOTES</p>
+     </div>
+     <div class="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/10"><i data-lucide="help-circle" class="text-yellow-300 mb-2" style="width:28px;height:28px;"></i>
+      <p class="text-white font-bold text-sm">CONCEPT CLEARANCE &amp; DOUBT SOLVING</p>
+     </div>
+     <div class="bg-white/10 backdrop-blur rounded-xl p-5 border border-white/10"><i data-lucide="target" class="text-yellow-300 mb-2" style="width:28px;height:28px;"></i>
+      <p class="text-white font-bold text-sm">EXAM FOCUSED PREPARATION</p>
+     </div>
+    </div>
+   </section><!-- Formula Section -->
+   <section class="py-12 px-6 text-center slide-in" style="animation-delay:0.9s">
+    <p class="text-white/50 text-sm tracking-widest mb-6">STRONG CONCEPTS • BETTER MARKS • BRIGHTER FUTURE</p><!-- Triangle SVG -->
+    <div class="flex justify-center mb-8">
+     <svg class="triangle-svg float-anim" width="180" height="160" viewbox="0 0 180 160"><polygon points="90,10 170,150 10,150" fill="none" stroke="#facc15" stroke-width="3" /> <text x="90" y="145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+       B
+      </text> <text x="15" y="155" fill="white" font-size="14" font-weight="bold">
+       A
+      </text> <text x="165" y="155" fill="white" font-size="14" font-weight="bold">
+       C
+      </text> <text x="90" y="90" text-anchor="middle" fill="#facc15" font-size="13" font-family="monospace">
+       a²+b²=c²
+      </text>
+     </svg>
+    </div><!-- Math formulas floating -->
+    <div class="flex flex-wrap justify-center gap-4 text-white/60 font-mono text-sm"><span class="bg-white/5 px-4 py-2 rounded-lg">x²−5x+6=0</span> <span class="bg-white/5 px-4 py-2 rounded-lg">(a+b)²=a²+2ab+b²</span> <span class="bg-white/5 px-4 py-2 rounded-lg">√x</span> <span class="bg-white/5 px-4 py-2 rounded-lg">−x</span>
+    </div>
+   </section><!-- Subjects -->
+   <section class="py-8 px-6 text-center slide-in" style="animation-delay:1.1s">
+    <p class="text-white/40 text-xs tracking-widest mb-4">LIVE CLASSES</p>
+    <div class="flex flex-wrap justify-center gap-3"><span class="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm">MATHEMATICS</span> <span class="bg-white/10 text-white px-6 py-2 rounded-full font-bold text-sm border border-white/20">ALGEBRA</span> <span class="bg-white/10 text-white px-6 py-2 rounded-full font-bold text-sm border border-white/20">GEOMETRY</span>
+    </div>
+   </section><!-- Why Choose Us -->
+   <section class="py-12 px-6 max-w-2xl mx-auto slide-in" style="animation-delay:1.3s">
+    <h3 class="text-yellow-300 text-2xl font-800 text-center mb-8">WHY CHOOSE US?</h3>
+    <div class="space-y-4">
+     <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+      <i data-lucide="monitor" class="text-green-400 shrink-0" style="width:24px;height:24px;"></i>
+      <p class="text-white">Live Interactive Classes</p>
+     </div>
+     <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+      <i data-lucide="lightbulb" class="text-green-400 shrink-0" style="width:24px;height:24px;"></i>
+      <p class="text-white">Easy to Understand Approach</p>
+     </div>
+     <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+      <i data-lucide="edit" class="text-green-400 shrink-0" style="width:24px;height:24px;"></i>
+      <p class="text-white">Regular Practice &amp; Tests</p>
+     </div>
+     <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+      <i data-lucide="user" class="text-green-400 shrink-0" style="width:24px;height:24px;"></i>
+      <p class="text-white">Personal Attention</p>
+     </div>
+     <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+      <i data-lucide="trending-up" class="text-green-400 shrink-0" style="width:24px;height:24px;"></i>
+      <p class="text-white">Better Results Guaranteed</p>
+     </div>
+    </div>
+   </section><!-- CTA -->
+   <section class="py-12 px-6 text-center slide-in" style="animation-delay:1.5s"><a id="enroll-btn" href="https://mail.google.com/mail/?view=cm&amp;to=mktutioncentre@gmail.com&amp;su=Enrollment%20Inquiry&amp;body=Hi%2C%20I%20would%20like%20to%20enroll." target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-900 text-xl px-10 py-5 rounded-full pulse-glow hover:scale-105 transition-transform no-underline"> ENROLL NOW! </a>
+    <p class="text-red-400 font-bold mt-4 text-sm animate-pulse">⚡ LIMITED SEATS — JOIN TODAY</p>
+   </section><!-- Footer -->
+   <footer class="py-10 px-6 text-center border-t border-white/10">
+    <p id="email-display" class="text-white/60 text-sm mb-3"><i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:6px;"></i> mktutioncentre@gmail.com</p>
+    <p class="text-white/40 text-xs italic mb-4">Learn Smart. Score Higher. Succeed.</p>
+    <p class="text-yellow-300 font-800 text-lg">YOUR SUCCESS — IS OUR — MISSION</p>
+   </footer>
+  </div>
+  <script>
+  const bgColors = ['#1a0533','#0a1628','#1a2e05','#2d0a0a','#0a2a2a','#1f1a00','#0d0d2b'];
+  let bgIndex = 0;
+
+  function changeBg() {
+    bgIndex = (bgIndex + 1) % bgColors.length;
+    const wrapper = document.getElementById('app-wrapper');
+    wrapper.style.background = bgColors[bgIndex];
+    if (window.elementSdk) window.elementSdk.setConfig({ background_color: bgColors[bgIndex] });
+  }
+
+  const defaultConfig = {
+    main_title: 'Maths',
+    tagline: 'Learn Today, Lead Tomorrow',
+    email: 'mktutioncentre@gmail.com',
+    background_color: '#1a0533',
+    text_color: '#ffffff',
+    accent_color: '#facc15',
+    font_family: 'Poppins',
+    font_size: 16
+  };
+
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => {
+      document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
+      document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+      const email = config.email || defaultConfig.email;
+      document.getElementById('email-display').innerHTML = `<i data-lucide="mail" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:6px;"></i>${email}`;
+      document.getElementById('enroll-btn').href = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=Enrollment%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20enroll.`;
+      document.getElementById('app-wrapper').style.background = config.background_color || defaultConfig.background_color;
+      
+      const font = config.font_family || defaultConfig.font_family;
+      document.body.style.fontFamily = `${font}, Poppins, sans-serif`;
+      
+      lucide.createIcons();
+    },
+    mapToCapabilities: (config) => ({
+      recolorables: [
+        { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({background_color:v}); }},
+        { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({text_color:v}); }},
+        { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({accent_color:v}); }}
+      ],
+      borderables: [],
+      fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({font_family:v}); }},
+      fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({font_size:v}); }}
+    }),
+    mapToEditPanelValues: (config) => new Map([
+      ['main_title', config.main_title || defaultConfig.main_title],
+      ['tagline', config.tagline || defaultConfig.tagline],
+      ['email', config.email || defaultConfig.email]
+    ])
+  });
+
+  lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ff1c6ca93761f0a',t:'MTc3OTM0NzU4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
